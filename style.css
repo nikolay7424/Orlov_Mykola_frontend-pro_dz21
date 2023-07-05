@@ -1,0 +1,171 @@
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80rem;
+  gap: 2rem;
+}
+
+.form-wrapper {
+  width: 35rem;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  height: 68.5rem;
+}
+
+textarea {
+  resize: none;
+  max-height: 20ch;
+  min-height: 10ch;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 1rem;
+  font-family: inherit;
+}
+
+.radio-wrapper {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+fieldset {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+label {
+  user-select: none;
+}
+
+.label-title {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+input[type="text"], input[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+input[type="submit"]:hover {
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+select {
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  accent-color: #000000;
+}
+
+.input-checkbox {
+  border: 1px black solid;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.input-checkbox > * {
+  cursor: pointer;
+}
+
+.input {
+  margin-bottom: 1rem;
+}
+
+.input:last-child {
+  margin-bottom: 0;
+}
+
+table {
+  width: 100%;
+}
+
+tr, td {
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+td:first-child {
+  width: 30%;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 4px double #000000;;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #000000;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 4px double #000000;;
+}
+
+.input-radio, .input-radio > * {
+  cursor: pointer;
+}

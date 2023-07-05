@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="form-wrapper">
+      <form id="form" class="form">
+        <div class="input">
+          <label class="label-title" for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="type your name">
+        </div>
+        <div class="input">
+          <label class="label-title" for="lastname">Lastname:</label>
+          <input type="text" name="lastname" id="lastname" placeholder="type your lastname">
+        </div>
+        <div class="input">
+          <label class="label-title" for="birthdate">Birthdate:</label>
+          <input type="text" name="birthdate" id="birthdate" placeholder="type your birthdate">
+        </div>
+        <div class="input">
+          <label for="gender" class="label-title">Gender:</label>
+          <div class="radio-wrapper">
+            <div class="input-radio">
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+            </div>
+
+            <div class="input-radio">
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+            </div>
+
+            <div class="input-radio">
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </div>
+        <div class="input">
+          <label class="label-title" for="city">City:</label>
+          <select name="city" id="city">
+            <option value="">Choose your city</option>
+            <option value="odesa">Odesa</option>
+            <option value="kiyv">Kiyv</option>
+            <option value="lviv">Lviv</option>
+          </select>
+        </div>
+        <div class="input">
+          <label class="label-title" for="address">Address:</label>
+          <textarea spellcheck="false" placeholder="please enter your addres" name="address" id="address" cols="20"
+            rows="5"></textarea>
+        </div>
+        <div class="input">
+          <label class="label-title" for="language">Language:</label>
+          <div class="checkbox-wrapper">
+            <div class="input-checkbox">
+              <label for="ukrainian">Ukrainian</label>
+              <input type="checkbox" name="ukrainian" id="ukrainian">
+            </div>
+            <div class="input-checkbox">
+              <label for="english">English</label>
+              <input type="checkbox" name="english" id="english">
+            </div>
+            <div class="input-checkbox">
+              <label for="spanish">Spanish</label>
+              <input type="checkbox" name="spanish" id="spanish">
+            </div>
+            <div class="input-checkbox">
+              <label for="japaneese">Japaneese</label>
+              <input type="checkbox" name="japaneese" id="japaneese">
+            </div>
+          </div>
+        </div>
+        <div class="input">
+          <input type="submit" value="Save">
+        </div>
+      </form>
+    </div>
+    <div class="form-wrapper">
+      <fieldset>
+        <legend>User data:</legend>
+        <table id="table">
+
+        </table>
+      </fieldset>
+    </div>
+  </div>
+
+</body>
+
+</html>
