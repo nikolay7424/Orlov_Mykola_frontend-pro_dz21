@@ -1,12 +1,16 @@
 const submit = document.querySelector('input[type=submit]')
 const table = document.getElementById('table')
+const reset = document.getElementById('reset')
 const form = document.getElementById('form')
 const radioElements = Array.from(form.querySelectorAll('input[type=radio]'))
 const checkboxElements = Array.from(form.querySelectorAll('input[type=checkbox]'))
+const tableWrapper = document.querySelector('.table-wrapper')
 
 function submitHandler(e) {
     e.preventDefault()
     table.innerHTML = ''
+    form.classList.add('is-hidden')
+    tableWrapper.classList.remove('is-hidden')
     let radioChecked = false
     let radioCounter = 0
     let citySelected = false
@@ -85,4 +89,12 @@ function createTableRow(key, value, appendTo) {
     appendTo.appendChild(tr)
 }
 
+function resetHandler(e) {
+    e.preventDefault()
+    form.reset()
+    form.classList.remove('is-hidden')
+    tableWrapper.classList.add('is-hidden')
+}
+
 submit.addEventListener('click', submitHandler)
+reset.addEventListener('click', resetHandler)

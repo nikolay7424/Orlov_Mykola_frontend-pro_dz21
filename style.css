@@ -51,9 +51,11 @@ textarea {
   border-radius: 0.5rem;
 }
 
-fieldset {
-  border: 1px solid black;
-  border-radius: 0.5rem;
+.table-wrapper {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
@@ -65,26 +67,30 @@ label {
   margin-bottom: 0.2rem;
 }
 
-input[type="text"], input[type="submit"] {
+input[type="text"], input[type="submit"], #reset {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid black;
 }
 
-input[type="submit"] {
+input[type="submit"], #reset {
   cursor: pointer;
   background-color: transparent;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, #reset:hover {
   color: white;
   background-color: black;
   font-weight: bold;
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, #reset:active {
   transform: scale(0.98);
+}
+
+#reset {
+  margin-top: auto;
 }
 
 select {
@@ -126,6 +132,10 @@ input[type="checkbox"] {
 
 table {
   width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 tr, td {
@@ -136,6 +146,10 @@ tr, td {
 
 td:first-child {
   width: 30%;
+}
+
+p {
+  margin: 0 0 0.5rem 0;
 }
 
 input[type='radio']:after {
@@ -168,4 +182,8 @@ input[type='radio']:checked:after {
 
 .input-radio, .input-radio > * {
   cursor: pointer;
+}
+
+.is-hidden {
+  display: none;
 }
